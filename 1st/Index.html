@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloSwaps</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .auth-buttons button {
+            margin-left: 10px;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .login {
+            background-color: transparent;
+            border: 1px solid #333;
+        }
+        .get-started {
+            background-color: #000;
+            color: #fff;
+        }
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .ww{
+           
+            text-align: center;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+        }
+        .form-container h2 {
+            margin: 0 0 20px;
+            font-size: 24px;
+        }
+        .form-container h2 span {
+            color: #ffd700;
+        }
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .form-row select,
+        .form-row input {
+            width: 22%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-row input {
+            width: 28%;
+        }
+        .find-offer {
+            background-color: #00c4b4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .why-zappr {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 1px solid #333;
+            border-radius: 20px;
+            background-color: transparent;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">helloswaps<sub>me</sub></div>
+        <nav>
+            <a href="#">Buy</a>
+            <a href="#">Sell</a>
+            <a href="#">Create an offer</a>
+        </nav>
+        <div class="auth-buttons">
+            <button class="login">Login</button>
+            <button class="get-started">Get started</button>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="ww">
+
+            <div class="form-container">
+            <h2>FIND YOUR OFFER <span>✨</span></h2>
+            <div class="form-row">
+                <select>
+                    <option>Currency</option>
+                </select>
+                <select>
+                    <option>Buy</option>
+                </select>
+                <select>
+                    <option>Payment</option>
+                </select>
+                <select>
+                    <option>Currency</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <input type="text" placeholder="How much">
+                <button class="find-offer">Find offer</button>
+            </div>
+            
+        </div>
+        <button class="why-zappr">Why Zappr?</button>
+        </div>
+        
+
+    </div>
+</body>
+</html>
